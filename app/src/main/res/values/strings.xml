@@ -32,9 +32,24 @@ and student leaders contacts.</string>
     <string name="home">HOME</string>
     <string name="announcements">ANNOUNCEMENTS</string>
     <string name="lost_found"><![CDATA[LOST & FOUND]]></string>
-    <string name="contacts">CONTACTS</string>
     <string name="my_profile">MY PROFILE</string>
     <string name="log_in">LOG IN</string>
     <string name="log_out">LOG OUT</string>
     <string name="app_slogan">Bringing information into your palms</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="emergency">Emergency</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="enter_adm_number">Enter Admission No.</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">FORGET PASSWORD</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="create_account_2">Create\nAccount</string>
+    <string name="full_name">Full Name</string>
+    <string name="admission_no">Admission No.</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="next">next</string>
 </resources>

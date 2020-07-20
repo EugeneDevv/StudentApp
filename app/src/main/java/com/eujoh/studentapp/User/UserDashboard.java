@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate;
 
+import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -16,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.eujoh.studentapp.Common.LoginSignUp.StudentStartUpScreen;
 import com.eujoh.studentapp.HelperClasses.HomeAdapter.CampusBuzzMvAdapter;
 import com.eujoh.studentapp.HelperClasses.HomeAdapter.CampusBuzzMvHelperClass;
 import com.eujoh.studentapp.HelperClasses.HomeAdapter.ClubsSocietiesAdapter;
@@ -116,6 +118,16 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.nav_drawer_home:
+                startActivity(new Intent(this,UserDashboard.class));
+                break;
+            case R.id.nav_drawer_contacts:
+                startActivity(new Intent(this,contacts.class));
+                break;
+            case R.id.nav_drawer_announcements:
+                startActivity(new Intent(this,announcements.class));
+        }
         return true;
     }
 
@@ -174,5 +186,9 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
         adapter = new RecentAnnouncementsAdapter(recentAnnouncements);
         recentAnnouncementsRecycler.setAdapter(adapter);
+    }
+
+    public void startupscreen(View view) {
+        startActivity(new Intent(this, StudentStartUpScreen.class));
     }
 }

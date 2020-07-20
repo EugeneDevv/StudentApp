@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.announcements"></activity>
+        <activity android:name=".Common.LoginSignUp.SignUp3rdClass"></activity>
+        <activity android:name=".Common.LoginSignUp.SignUp2ndClass" />
+        <activity android:name=".Common.LoginSignUp.SignUp" />
+        <activity android:name=".Common.LoginSignUp.Login" />
+        <activity android:name=".Common.LoginSignUp.StudentStartUpScreen" />
+        <activity android:name=".User.contacts" />
+        <activity android:name=".User.announcements" />
         <activity android:name=".Common.OnBoarding" />
         <activity android:name=".User.UserDashboard" />
         <activity android:name=".Common.SplashScreen">
