@@ -41,58 +41,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="40dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Choose Year of Study:"
+                    android:text="Your Phone Number:"
                     android:textColor="@color/colorAccent"
                     android:fontFamily="@font/brandon_grotesque_bold"
                     android:textSize="18sp"/>
-
-
-                <Spinner
-                    android:id="@+id/spinner"
+                <!--                <com.hbb20.CountryCodePicker/>-->
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginRight="100dp"
-                    android:background="@color/colorAccent"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/brandon_grotesque_bold"
-                    android:text="Set Profile Picture:"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="18sp" />
-                <RelativeLayout
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/profile"
-                        android:layout_gravity="center"/>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.hbb20.CountryCodePicker
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_showNameCode="false"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/black_border"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentRight="true">
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/profile_icon"
-                            android:background="@color/emeralGreen"/>
-                    </RelativeLayout>
-                </RelativeLayout>
+                        android:hint="@string/phone_number"
+                        app:startIconDrawable="@drawable/phone_icon"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:startIconTint="@color/colorAccent"
+                        app:hintTextColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:boxStrokeColor="@color/colorAccent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
             </LinearLayout>
             <Button
                 android:id="@+id/sign_up_next_btn"
@@ -100,10 +88,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/next"
                 android:background="@color/colorAccent"
-                android:onClick="callNextSignUpScreen"
+                android:onClick="callVerificationCode"
                 android:textAllCaps="true"
                 android:textColor="@color/whiteDark"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:transitionName="transition_next_btn"/>
             <Button
                 android:id="@+id/sign_up_login_btn"

@@ -14,6 +14,7 @@
         <activity android:name=".Common.LoginSignUp.SignUp" />
         <activity android:name=".Common.LoginSignUp.Login" />
         <activity android:name=".Common.LoginSignUp.StudentStartUpScreen" />
+        <activity android:name=".Common.LoginSignUp.VerifyOTP" />
         <activity android:name=".User.contacts" />
         <activity android:name=".User.announcements" />
         <activity android:name=".Common.OnBoarding" />

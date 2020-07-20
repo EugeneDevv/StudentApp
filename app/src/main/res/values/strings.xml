@@ -52,4 +52,6 @@ and student leaders contacts.</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="next">next</string>
+    <string name="code">Co\nde</string>
+    <string name="verification">VERIFICATION</string>
 </resources>
