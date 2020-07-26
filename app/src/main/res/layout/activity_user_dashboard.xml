@@ -16,6 +16,7 @@
         android:layout_gravity="start"
         android:theme="@style/navigationDrawerTheme"
         app:headerLayout="@layout/nav_drawer_header"
+        android:scrollbars="none"
         app:menu="@menu/nav_drawer_menu"/>
 
     <LinearLayout
@@ -49,47 +50,53 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/whiteDark">
+            android:background="@color/whiteDark"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/whiteDark"
                 android:orientation="vertical">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/app_title_dashboard_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24sp"
                         android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/brandon_grotesque_bold"
                         android:text="@string/app_tittle"
-                        android:fontFamily="@font/brandon_grotesque_bold"/>
+                        android:textSize="24sp" />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@id/app_title_dashboard_tv"
-                        android:background="@color/whiteColor"
-                        android:layout_marginRight="40dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
                         android:layout_marginBottom="20dp"
+                        android:background="@color/whiteColor"
                         android:elevation="8dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/search_contacts"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="15dp"/>
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/search_contacts" />
+
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/search_icon"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="15dp"/>
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/search_icon" />
                     </RelativeLayout>
                 </RelativeLayout>
 
@@ -98,25 +105,28 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="5dp"
-                        android:layout_centerVertical="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="30dp">
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+
                         <RelativeLayout
                             android:layout_width="60dp"
                             android:layout_height="60dp"
+                            android:layout_margin="10dp"
                             android:background="@drawable/card_1"
-                            android:elevation="8dp"
-                            android:layout_margin="10dp">
+                            android:elevation="8dp">
+
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:src="@drawable/map_icon"
-                                android:layout_centerInParent="true"/>
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/map_icon" />
                         </RelativeLayout>
 
                         <TextView
@@ -128,23 +138,26 @@
                             android:text="@string/school_map"
                             android:textAlignment="center" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
                         android:layout_centerInParent="true"
-                        android:layout_centerVertical="true">
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
                         <RelativeLayout
                             android:layout_width="60dp"
                             android:layout_height="60dp"
+                            android:layout_margin="10dp"
                             android:background="@drawable/card_2"
-                            android:elevation="8dp"
-                            android:layout_margin="10dp">
+                            android:elevation="8dp">
+
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:src="@drawable/web_icon"
-                                android:layout_centerInParent="true"/>
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/web_icon" />
                         </RelativeLayout>
 
                         <TextView
@@ -156,23 +169,26 @@
                             android:text="@string/school_website"
                             android:textAlignment="center" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="30dp"
                         android:orientation="vertical">
+
                         <RelativeLayout
                             android:layout_width="60dp"
                             android:layout_height="60dp"
+                            android:layout_margin="10dp"
                             android:background="@drawable/card_3"
-                            android:elevation="8dp"
-                            android:layout_margin="10dp">
+                            android:elevation="8dp">
+
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:src="@drawable/portal_icon"
-                                android:layout_centerInParent="true"/>
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/portal_icon" />
                         </RelativeLayout>
 
                         <TextView
@@ -237,97 +253,112 @@
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:layout_toRightOf="@+id/recent_announcements_bg"
-                        android:background="@color/whiteDark"/>
+                        android:background="@color/whiteDark" />
                 </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_marginTop="15dp"
+                    android:orientation="vertical"
                     android:padding="15dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/brandon_grotesque_bold"
                             android:text="@string/campus_buzz_most_viewed"
-                            android:textSize="18sp"
                             android:textColor="@color/colorAccent"
-                            android:fontFamily="@font/brandon_grotesque_bold"/>
+                            android:textSize="18sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/view_all"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:fontFamily="@font/brandon_grotesque_regular"/>
+                            android:fontFamily="@font/brandon_grotesque_regular"
+                            android:text="@string/view_all" />
                     </RelativeLayout>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/campus_buzz_mv_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:background="@color/whiteDark"/>
+                        android:background="@color/whiteDark" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_marginTop="15dp"
+                    android:orientation="vertical"
                     android:padding="15dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/brandon_grotesque_bold"
                             android:text="@string/upcoming_events"
-                            android:textSize="18sp"
                             android:textColor="@color/colorAccent"
-                            android:fontFamily="@font/brandon_grotesque_bold"/>
+                            android:textSize="18sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/view_all"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:fontFamily="@font/brandon_grotesque_regular"/>
+                            android:fontFamily="@font/brandon_grotesque_regular"
+                            android:text="@string/view_all" />
                     </RelativeLayout>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/upcoming_events_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:background="@color/whiteDark"/>
+                        android:background="@color/whiteDark" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_marginTop="15dp"
+                    android:orientation="vertical"
                     android:padding="15dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/brandon_grotesque_bold"
                             android:text="@string/clubs_sports"
-                            android:textSize="18sp"
                             android:textColor="@color/colorAccent"
-                            android:fontFamily="@font/brandon_grotesque_bold"/>
+                            android:textSize="18sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/view_all"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:fontFamily="@font/brandon_grotesque_regular"/>
+                            android:fontFamily="@font/brandon_grotesque_regular"
+                            android:text="@string/view_all" />
                     </RelativeLayout>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/clubs_societies_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:background="@color/whiteDark"/>
+                        android:background="@color/whiteDark" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

@@ -13,6 +13,10 @@
         <activity android:name=".Common.LoginSignUp.SignUp2ndClass" />
         <activity android:name=".Common.LoginSignUp.SignUp" />
         <activity android:name=".Common.LoginSignUp.Login" />
+        <activity android:name=".Common.LoginSignUp.ForgetPassword" />
+        <activity android:name=".Common.LoginSignUp.MakeSelection" />
+        <activity android:name=".Common.LoginSignUp.SetNewPassword" />
+        <activity android:name=".Common.LoginSignUp.PasswordUpdateSuccessful" />
         <activity android:name=".Common.LoginSignUp.StudentStartUpScreen" />
         <activity android:name=".Common.LoginSignUp.VerifyOTP" />
         <activity android:name=".User.contacts" />

@@ -54,4 +54,10 @@ and student leaders contacts.</string>
     <string name="next">next</string>
     <string name="code">Co\nde</string>
     <string name="verification">VERIFICATION</string>
+    <string name="forgot_password_desc">Provide your account\'s Email for whcich you want to reset password!</string>
+    <string name="make_selection_desc">Select which contact detail should we use to reset your password?</string>
+    <string name="new_password">new\npassword</string>
+    <string name="new_password_detail">Your identity has been confirmed! \n Set your new password</string>
+    <string name="password_updated">Password \n Updated</string>
+    <string name="password_updated_detail">Your password has been updated successfully!</string>
 </resources>
